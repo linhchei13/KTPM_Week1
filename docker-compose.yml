@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  vm:
+    build: .
+    container_name: ktpm_vm
+    restart: unless-stopped
+    ports:
+      - "2222:22"   # map host 2222 -> container 22 for SSH
+      - "5901:5901" # map host 5901 -> container 5901 for VNC
+    tty: true
+    stdin_open: true
+    privileged: false
