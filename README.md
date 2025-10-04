@@ -24,11 +24,7 @@ Hướng dẫn nhanh
    sudo apt update
    sudo apt update sudo apt install xfce4 tightvncserver
 
-   # Thiết lập mật khẩu VNC cho user
-
    vncserver :1
-
-   # Khởi VNC server (display :1)
 
    vncserver :1 -geometry 1920x1080 -depth 24
 4) Kết nối từ Windows
